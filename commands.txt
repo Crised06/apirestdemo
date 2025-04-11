@@ -1,0 +1,4 @@
+sudo chmod +x mvnw
+./mvnw clean install
+docker build -t apirestdemo:latest .
+docker run -p 8087:8087 apirestdemo:latest
